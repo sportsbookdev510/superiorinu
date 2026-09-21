@@ -418,27 +418,22 @@ code {
 
 .about-embed {
   width: 100%;
-  min-height: 320px;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
   border-radius: 12px;
   overflow: hidden;
   background: #0d0f0e;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  color-scheme: dark;
   animation: rise 0.8s 0.1s var(--ease) both;
 }
 
-.about-embed iframe,
-.truthsocial-embed--dark {
-  width: 100% !important;
-  max-width: 100% !important;
-  min-height: 420px;
-  border-radius: 12px !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  background: #0d0f0e !important;
-  color-scheme: dark;
-  /* Truth Social embed ships light; invert to match site dark theme */
-  filter: invert(1) hue-rotate(180deg);
+.about-logo {
+  width: min(100%, 420px);
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 /* How to buy */
