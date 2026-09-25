@@ -243,6 +243,25 @@ main,
   box-shadow: 0 0 20px rgba(46, 242, 255, 0.25);
 }
 
+.btn-coingecko {
+  background: #8bc53f;
+  color: #0a1a08;
+  box-shadow: 0 0 0 1px rgba(139, 197, 63, 0.35), 0 0 18px rgba(139, 197, 63, 0.28);
+}
+
+.btn-coingecko img {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.btn-coingecko:hover {
+  transform: translateY(-2px);
+  background: #9ad14a;
+  box-shadow: 0 0 28px rgba(139, 197, 63, 0.5);
+}
+
 .btn-lg {
   padding: 0.95rem 1.7rem;
   font-size: 0.95rem;
@@ -657,8 +676,15 @@ main,
   color: var(--text-muted);
 }
 
-.join-block .btn {
+.join-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   margin-left: auto;
+}
+
+.join-block .btn {
+  margin-left: 0;
 }
 
 /* Footer */
@@ -832,8 +858,13 @@ main,
     padding-bottom: 3rem;
   }
 
-  .join-block .btn {
+  .join-actions {
     margin-left: 0;
     width: 100%;
+  }
+
+  .join-actions .btn {
+    flex: 1;
+    min-width: 140px;
   }
 }
